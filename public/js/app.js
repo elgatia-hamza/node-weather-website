@@ -28,7 +28,7 @@ weatherForm.addEventListener('submit', (e)=>{
             }else{
                 messageOne.textContent = data[0].location;
                 messageTwo.textContent = data[0].forecast + '. It is currently '+ 
-                                            data[0].temperature + ', but it feels like '+ data[0].feelsLike;
+                                            data[0].temperature + ' degrees out, but it feels like '+ data[0].feelsLike + ' degrees out. The humidity is '+data[0].humidity +'% .';
             }
             
         })
