@@ -27,7 +27,8 @@ weatherForm.addEventListener('submit', (e)=>{
                 messageOne.textContent = data.error;
             }else{
                 messageOne.textContent = data[0].location;
-                messageTwo.textContent = data[0].forecast;
+                messageTwo.textContent = data[0].forecast + '. It is currently '+ 
+                                            data[0].temperature + ', but it feels like '+ data[0].feelsLike;
             }
             
         })
